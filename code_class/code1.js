@@ -67,11 +67,7 @@ const exportPdf = () => {
 
       const captureSlide = () => {
         html2canvas(cloneSlide, {
-          backgroundColor: "transparent",
-          logging: true,
-          profile: true,
-          useCORS: true,
-          allowTaint: true,
+          backgroundColor: "transparent"
         })
           .then(async (canvas) => {
             const canvasUrl = canvas.toDataURL("image/png");
